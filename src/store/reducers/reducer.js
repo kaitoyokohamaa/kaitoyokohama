@@ -17,6 +17,12 @@ const initialState = {
           ...state,
           value:state.value=action.value
         };
+        case actionTypes.REMOVE:
+            const updatedArray = state.todo.filter(result => result.id !== action.deleteResult)
+          return{
+            ...state,
+            todo:updatedArray
+          };
       default:
         return state;
     }

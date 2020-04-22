@@ -1,11 +1,25 @@
-.backimg {
+.my {
   margin: 0 auto;
-  background-repeat: no-repeat;
+  background-image: url('../src/aseets/スクリーンショット 2020-04-22 22.45.37.png');
   height: 100vh;
-  opacity: 0.7;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 h1 {
   margin: 0;
+  margin-bottom: 2%;
   color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+li {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  text-decoration: none;
 }

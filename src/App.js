@@ -4,8 +4,8 @@ import './App.css';
 
 function App() {
   return (
-    <div style={{
-      background:"#ccb3b3",
+    <div className="my" 
+    style={{
       width:"100%",
       height:"100vh"
     }}>

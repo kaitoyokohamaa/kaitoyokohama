@@ -10,7 +10,7 @@ function App() {
       height:"100vh"
     }}>
     <div className="backimg">
-      <h1>横浜のto doアプリ</h1>
+      <h1 className="fire">横浜のto doアプリ</h1>
       <Form />
     </div>
     </div>

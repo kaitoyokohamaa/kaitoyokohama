@@ -4,22 +4,26 @@ import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
 import DeleteIcon from "@material-ui/icons/Delete";
 import * as actionTypes from "../../store/actions/actions";
+import "./Form.css";
 class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={(e) => e.preventDefault()}>
-          <TextField
-            onChange={(e) => this.props.onChangeHandler(e.target.value)}
-          ></TextField>
-          <Button
-            onClick={() => this.props.onStoreResult(this.props.value)}
-            style={{ color: "black" }}
-          >
-            送信
-          </Button>
-        </form>
-        <ul>
+        <div className="btn-square-toy">
+          <form onSubmit={(e) => e.preventDefault()}>
+            <TextField
+              style={{ width: "70%" }}
+              onChange={(e) => this.props.onChangeHandler(e.target.value)}
+            ></TextField>
+            <Button
+              onClick={() => this.props.onStoreResult(this.props.value)}
+              style={{ color: "#fff" }}
+            >
+              送信
+            </Button>
+          </form>
+        </div>
+        <ul className="todo">
           {this.props.add.map((l) => (
             <li key={l.id}>
               {l.value}

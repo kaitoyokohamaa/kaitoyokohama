@@ -2,7 +2,7 @@
   margin: 0 auto;
   background-image: url('../src/aseets/スクリーンショット 2020-04-22 22.45.37.png');
   height: 100vh;
-
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -22,4 +22,14 @@ li {
 
 ul {
   text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-family: "League-Gothic", Courier;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
 }

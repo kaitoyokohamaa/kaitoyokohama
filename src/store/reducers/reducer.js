@@ -1,20 +1,25 @@
-import {ADD,REMOVE}from '../actions/add'
+import * as actionTypes from '../actions/actions'
 
 const initialState = {
-    add :""
+    value:[],
+    todo :[]
 }
-export function counterReducer(state = initialState, action){
+ const reducer =(state = initialState, action) =>{ 
     switch(action.type) {
-      case ADD:
+      case actionTypes.ADD:
+       
         return {
           ...state,
-          add: 
+          todo: state.todo.concat({id:new Date(),value:action.value})
         };
-      case REMOVE:
+      case actionTypes.CHANGE:
         return {
           ...state,
-          add: 
+          value:state.value=action.value
         };
       default:
         return state;
     }
+}
+
+export default reducer;

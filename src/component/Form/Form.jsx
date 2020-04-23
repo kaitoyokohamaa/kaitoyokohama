@@ -13,10 +13,14 @@ class Form extends Component {
           <form onSubmit={(e) => e.preventDefault()}>
             <TextField
               style={{ width: "70%" }}
+              value={this.props.value}
               onChange={(e) => this.props.onChangeHandler(e.target.value)}
             ></TextField>
             <Button
-              onClick={() => this.props.onStoreResult(this.props.value)}
+              onClick={() => {
+                this.props.onChangeHandler("");
+                this.props.onStoreResult(this.props.value);
+              }}
               style={{ color: "#fff" }}
             >
               送信
